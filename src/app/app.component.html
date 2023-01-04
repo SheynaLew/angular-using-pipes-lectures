@@ -16,7 +16,7 @@
           </span>
           <strong>
             {{ server.name | shorten:12 }}</strong> |
-            {{ server.instanceType | uppercase}} |
+            {{ server.instanceType | uppercase | reverse}} |
             {{ server.started | date:'fullDate' | uppercase}}
         </li>
       </ul>
